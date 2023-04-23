@@ -190,7 +190,7 @@ button:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 8rem 0 0 0;
+  margin: 1.5rem  0;
 }
 
 .admin-info {
@@ -566,21 +566,21 @@ input {
     font-size: 1.8rem;
   }
 
-  .admin1 {
-    margin-top: 0;
-    display: flex;
-    flex-wrap: wrap;
-    width: min-content;
+  @media screen and (max-width: 580px) {
+    .admin1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+      grid-gap: 8px;
+      width: 100%;
+    }
+
+    .admin-info {
+      margin: 0;
+      box-sizing: border-box;
+    }
   }
 
-  .admin-info {
-    padding: 0 0 0.5rem 0;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 100%;
-    margin: 8px 0;
-  }
-}
 
 /*SHOWCASE*/
 
