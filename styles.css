@@ -12,7 +12,7 @@
   --secondary-color: #abc87d4f;
   --heading-color: #101415da;
   --text-color: #52544f;
-  --accent-color: #9ae128;
+  --accent-color: #8bc035;
 }
 
 body {
@@ -215,12 +215,10 @@ h3 {
 .admin-info .phone-no {
   color: var(--accent-color);
 }
-
-/*SHOWCASE SECTION*/
-
-:root {
-  --heading-color: #333;
+.admin-info .phone-no {
+  color: var(--accent-color);
 }
+/*SHOWCASE SECTION*/
 
 .showcase {
   margin: 5rem auto;
