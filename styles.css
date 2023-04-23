@@ -197,6 +197,9 @@ button:active {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .admin-info h3,
 p {
