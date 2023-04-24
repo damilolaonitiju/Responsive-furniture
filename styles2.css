@@ -1,33 +1,44 @@
 /* PAGE TWO */
-/*dd*/
+* {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 
+  color: #0d0f0fda;
+}
 #product1 {
-  padding-top: 82px;
+  padding-top: 50px;
   text-align: center;
+}
+.heado {
+  padding-bottom: 24px;
+  font-weight: 550;
+  color: #0d0f0fda;
+  font-size: 1.3rem;
 }
 
 .card {
   width: 23%;
   min-width: 250px;
-  padding: 10px 24px;
+  padding: 4px 24px;
   border: 1px solid #cce7d0;
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
   margin: 15px 0;
   transition: 0.2s ease;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.card:hover {
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+
+@media screen and (max-width: 580px) {
+  .card {
+    width: 40%;
+    min-width: 175px;
+  }
 }
-.card img {
-  width: 100%;
-  border-radius: 20px;
+.card:hover {
+  box-shadow: 20px 20px 30px hsla(83, 47%, 80%, 0.356);
 }
 
 .card .description {
@@ -47,12 +58,7 @@
   font-size: 12px;
   color: rgb(243, 181, 25);
 } */
-.card .price {
-  padding-top: 7px;
-  font-size: 15px;
-  font-weight: 700;
-  color: #088178;
-}
+
 /* #product1 .pro .cart {
   width: 40px;
   height: 40px;
@@ -67,19 +73,36 @@
   right: 10px;
 } */
 
-.category,
-.price {
-  font-size: 1.2rem;
+.card .price {
+  padding-top: 7px;
+  font-size: 0.5rem;
+  color: #56830d;
 }
 
 .price {
-  font-size: large;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: 4px;
+}
+
+.category {
+  font-size: 0.9rem;
+  padding-top: 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.title {
+  font-weight: 500;
+  padding-bottom: 1rem;
+  letter-spacing: 0.5px;
+  line-height: 120%;
 }
 
 #cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0 16px;
   flex-wrap: wrap;
 }
@@ -89,8 +112,8 @@
   height: auto;
 }
 #cards img {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 80%;
+  max-height: 80%;
   width: auto;
   height: auto;
   object-fit: contain;
