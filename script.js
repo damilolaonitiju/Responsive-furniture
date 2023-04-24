@@ -1,3 +1,14 @@
+//show and hide currency drop down
+
+const money = document.querySelector(".money");
+const monies = document.querySelector(".monies");
+
+monies.classList.add("hidden");
+
+money.addEventListener("click", function () {
+  monies.classList.toggle("hidden");
+});
+
 //populating the website with data from a fake api store
 
 fetch("https://fakestoreapi.com/products")
@@ -31,7 +42,6 @@ function getExchangeRate(targetCurrency) {
     .then((data) => data.conversion_rates[targetCurrency]);
 }
 
-// Update prices based on selected currency
 // Update prices based on selected currency
 function updatePrices(targetCurrency) {
   const prices = document.querySelectorAll(".price");
