@@ -9,6 +9,9 @@
   text-align: center;
 }
 
+body {
+  background: hsl(83, 8%, 98%);
+}
 .hidden {
   display: none;
 }
@@ -38,8 +41,8 @@
 
 @media screen and (max-width: 580px) {
   .card {
-    width: 25%;
-    min-width: 175px;
+    width: 40%;
+    min-width: 150px;
   }
 }
 .card:hover {
