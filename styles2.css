@@ -135,6 +135,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.joint .money {
+  padding-bottom: 8px;
+}
+
+select {
+  font-size: 1rem;
+}
+
 /* 
 .monies {
   display: none;
